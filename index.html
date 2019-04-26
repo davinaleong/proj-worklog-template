@@ -9,30 +9,53 @@
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-pro/css/all.min.css">
   <link rel="stylesheet" href="./dist/css/main.css">
+  <link rel="stylesheet" href="./dist/css/auth.css">
 </head>
-<body class="bg-gray-100">
-  <div id="login-wrapper" class="row">
-    <div class="col-12">
-      
-      <section class="form-login container bg-white py-3">
-        <h2 class="mb-2">Welcome back!</h2>
-        <h3 class="h4">Sign In <i class="fal fa-sign-in"></i></h3>
+<body class="bg-gray-100 h-100">
+  <main id="wrapper-auth" class="row h-100">
 
-        <form>
-          <input type="email" name="email" placeholder="Email"
-            class="form-control mb-2" required>
+    <!-- Welcome Header -->
+    <div class="col-12 col-md-7 h-100 d-sm-none d-md-block">
 
-          <input type="password" name="password" placeholder="Password"
-            class="form-control mb-2" required>
-
-          <button type="submit" class="btn btn-primary">
-            <i class="fal fa-check"></i> Submit
-          </button>
-        </form>
+      <section id="wrapper-header" class="h-100">
+        <header class="w-100">
+          <h1 class="display-1 text-center">Work Log</h1>
+        </header>
       </section>
 
     </div>
-  </div>
+
+    <!-- Sign-in Form -->
+    <div class="col-12 col-md-5 h-100">
+      
+      <section id="wrapper-form" class="py-3 container bg-white h-100">
+        <div class="w-100">
+            <h1 class="display-4 mb-3 text-center d-md-none">Work Log</h1>
+
+            <h2 class="mb-2">Welcome back!</h2>
+            <h3 class="h4 mb-2">Sign In <i class="fal fa-sign-in"></i></h3>
+    
+            <form class="mb-3">
+              <input type="email" name="email" placeholder="Email"
+                class="form-control mb-2" required>
+    
+              <input type="password" name="password" placeholder="Password"
+                class="form-control mb-2" required>
+    
+              <button type="submit" class="btn btn-primary">
+                <i class="fal fa-check"></i> Submit
+              </button>
+            </form>
+    
+            <p class="text-center">
+              <a href="./sign-Up.html">Sign Up</a> | <a href="./forgot-password.html">Forgot Password</a>
+            </p>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
 
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
