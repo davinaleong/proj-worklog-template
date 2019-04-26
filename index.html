@@ -36,17 +36,21 @@
             <h3 class="h4 mb-2">Sign In <i class="fal fa-sign-in"></i></h3>
     
             <form class="mb-3">
-              <input type="email" name="email" placeholder="Email"
+              <input type="email" name="email" placeholder="Email *"
                 class="form-control mb-2" required>
     
-              <input type="password" name="password" placeholder="Password"
+              <input type="password" name="password" placeholder="Password *"
                 class="form-control mb-2" required>
+
+              <p class="text-danger small">
+                  * denotes mandatory fields
+              </p>
     
               <button type="submit" class="btn btn-primary">
                 <i class="fal fa-check"></i> Submit
               </button>
             </form>
-    
+            
             <p class="text-center">
               <a href="./sign-Up.html">Sign Up</a> | <a href="./forgot-password.html">Forgot Password</a>
             </p>
