@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Work Log - Welcome</title>
+  <title>Work Log - Sign Up</title>
 
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-pro/css/all.min.css">
@@ -14,31 +14,22 @@
 <body class="bg-gray-100 h-100">
   <main id="wrapper-auth" class="row h-100">
 
-    <!-- Welcome Header -->
-    <div class="col-12 col-md-7 h-100 d-none d-md-block">
-
-      <section id="wrapper-header" class="h-100">
-        <header class="w-100">
-          <h1 class="display-1 text-center">Work Log</h1>
-        </header>
-      </section>
-
-    </div>
-
-    <!-- Sign-in Form -->
-    <div class="col-12 col-md-5 h-100">
+    <!-- Sign-up Form -->
+    <div class="col-12 h-100">
       
       <section id="wrapper-form" class="py-3 container bg-white h-100">
         <div class="w-100">
-            <h1 class="display-4 mb-3 text-center d-md-none">Work Log</h1>
+            <h1 class="display-4 mb-3 text-center">Work Log</h1>
 
-            <h2 class="mb-2 d-none d-md-block">Welcome back!</h2>
+            <h2 class="mb-2">Sign Up</h2>
     
             <form class="mb-5">
               <input type="email" name="email" placeholder="Email *"
-                class="form-control mb-2" required>
+                class="form-control mb-3" required>
     
               <input type="password" name="password" placeholder="Password *"
+                class="form-control mb-2" required>
+              <input type="password" name="confirm-password" placeholder="Confirm Password *"
                 class="form-control mb-2" required>
 
               <p class="text-danger small">
@@ -51,7 +42,7 @@
             </form>
             
             <p class="text-center">
-              <a href="./sign-up.html">Sign Up</a> | <a href="./forgot-password.html">Forgot Password</a>
+              <a href="./index.html">Sign In</a>
             </p>
 
         </div>
