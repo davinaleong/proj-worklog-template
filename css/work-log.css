@@ -1,0 +1,61 @@
+/*
+  Day Types
+  - Work: [laptop] Secondary
+  - Annual Leave: [umbrella] Orange
+  - Public Holiday: [calendar] Teal
+  - Medical Leave: [stethoscope] Pink
+*/
+/* :root {
+  --secondary: #858796;
+  --orange: #fd7e14;
+  --teal: #20c9a6;
+  --pink: #e83e8c;
+} */
+
+.wl-text-work {
+  color: #858796;
+}
+
+.wl-bg-work {
+  background-color: #858796;
+}
+
+.wl-border-work {
+  border-color: #858796;
+}
+
+.wl-text-annual-leave {
+  color: #fd7e14;
+}
+
+.wl-bg-annual-leave {
+  background-color: #fd7e14;
+}
+
+.wl-border-annual-leave {
+  border-color: #fd7e14;
+}
+
+.wl-text-public-holiday {
+  color: #20c9a6;
+}
+
+.wl-bg-public-holiday {
+  background-color: #20c9a6;
+}
+
+.wl-border-public-holiday {
+  border-color: #20c9a6;
+}
+
+.wl-text-medical-leave {
+  color: #e83e8c;
+}
+
+.wl-background-color {
+  background-color: #e83e8c;
+}
+
+.wl-border-color {
+  border-color: #e83e8c;
+}
