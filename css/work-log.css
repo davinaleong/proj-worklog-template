@@ -13,64 +13,68 @@
 } */
 
 .wl-text-work {
-  color: #858796;
+  color: #607d8b;
 }
 
 .wl-bg-work {
-  background-color: #858796;
+  background-color: #607d8b;
 }
 
 .wl-border-work {
-  border-color: #858796;
+  border-color: #607d8b;
 }
 
 .wl-text-annual-leave {
-  color: #fd7e14;
+  color: #ff9800;
 }
 
 .wl-bg-annual-leave {
-  background-color: #fd7e14;
+  background-color: #ff9800;
 }
 
 .wl-border-annual-leave {
-  border-color: #fd7e14;
+  border-color: #ff9800;
 }
 
 .wl-text-public-holiday {
-  color: #20c9a6;
+  color: #00bcd4;
 }
 
 .wl-bg-public-holiday {
-  background-color: #20c9a6;
+  background-color: #00bcd4;
 }
 
 .wl-border-public-holiday {
-  border-color: #20c9a6;
+  border-color: #00bcd4;
 }
 
 .wl-text-medical-leave {
-  color: #e83e8c;
+  color: #e91e63;
 }
 
 .wl-background-color {
-  background-color: #e83e8c;
+  background-color: #e91e63;
 }
 
 .wl-border-color {
-  border-color: #e83e8c;
+  border-color: #e91e63;
 }
 
 .wl-project-code {
-  color: #6f42c1;
+  color: #673ab7;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .wl-project-code-misc {
-  color: #858796;
+  color: #9e9e9e;
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-style: italic;
+}
+
+.wl-code {
+  color: #3f51b5;
 }
 
 .clickable:hover {
