@@ -59,3 +59,8 @@
 .wl-border-color {
   border-color: #e83e8c;
 }
+
+.clickable:hover {
+  cursor: pointer;
+  border-color: #4e73df;
+}
