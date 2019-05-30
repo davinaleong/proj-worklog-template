@@ -126,33 +126,27 @@
             <!-- Work Log Card -->
             <div class="col-12">
 
-              <f class="card border-left-primary shadow mb-4 worklog-card">
+              <div class="card border-left-primary shadow mb-4 worklog-card">
                 <form class="card-body" method="POST" action="">
 
+                  <!-- Work Log Tags -->
+                  <div class="d-flex align-items-center mb-1">
+                    <div class="text-xs font-weight-bold text-seconary text-uppercase">
+                      <i class="fas fa-fw fa-pen"></i> EDITING
+                    </div>
+                  </div>
+
                   <!-- Day-Task Header -->
-                  <div class="row no-gutters align-items-center">
+                  <div class="row no-gutters align-items-center mb-3">
                     <div class="col mr-2">
-                      <div class="d-flex align-items-center mb-1">
-                        <div class="text-xs font-weight-bold text-seconary text-uppercase">
-                          <i class="fas fa-fw fa-pen"></i> EDITING
-                        </div>
-                      </div>
-    
-                      <!-- <h4 class="m-0 font-weight-bold pb-3">
-                        Week 11
-                      </h4> -->
-                      <div class="form-group">
-                        <input type="text" name="title" class="form-control" placeholder="Week 11"
-                          required>
-                      </div>
+                      <input type="text" name="title" class="form-control"
+                        placeholder="Week 11" required>
                     </div>
                     <div class="col-auto">
-                      <button type="button" class="d-none d-sm-inline-block
-                        btn btn-sm btn-outline-secondary shadow-sm">
+                      <button type="button" class="btn btn-sm btn-outline-secondary shadow-sm">
                         <i class="fas fa-trash-alt fa-sm"></i> Cancel
                       </button>
-                      <button type="button" class="d-none d-sm-inline-block
-                        btn btn-sm btn-primary shadow-sm">
+                      <button type="button" class="btn btn-sm btn-primary shadow-sm">
                         <i class="fas fa-check fa-sm"></i> Submit
                       </button>
                     </div>
@@ -161,15 +155,46 @@
                   <!-- Day-Task list-group -->
                   <ul class="list-group">
                     <li class="list-group-item">
-                      <h5 class="wl-text-medical-leave"><i class="fas fa-fw fa-stethoscope"></i> May 31</h5>
+                      <!-- <h5 class="wl-text-medical-leave"><i class="fas fa-fw fa-stethoscope"></i> May 31</h5> -->
+                      <div class="form-row">
+                        <div class="col-8">
+                          <div class="form-group">
+                            <label for="day-title">Day Title <span class="text-danger">*</span></label>
+                            <input type="text" name="day-title" class="form-control" placeholder="May 31" required>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="day-type">Day-Type <span class="text-danger">*</span></label>
+                            <select name="day-type" class="form-control" required>
+                              <option value="">- Select Day-type -</option>
+                              <option value="W">Work Day</option>
+                              <option value="M" selected>Medical Leave</option>
+                              <option value="A">Annual Leave</option>
+                              <option value="P">Public Holiday</option>
+                              <option value="O">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
 
-                      <ol>
+                      <!-- <ol>
                         <li><code class="wl-project-code">SSO</code>: Started on #61</li>
                         <li><code class="wl-project-code">SSO</code>: Minor bug fixes on #60</li>
                         <li><code class="wl-project-code">KLICK</code>: Assisted in testing mobile apps</li>
                         <li><code class="wl-project-code">SSO</code>: Researched on <code class="wl-code">schema.org</code></li>
                         <li><code class="wl-project-code">SSO</code>: Researched on Google Rich Snippets</li>
-                      </ol>
+                      </ol> -->
+                      <div class="form-group">
+                        <label for="tasks">Tasks <span class="text-danger">*</span></label>
+                        <textarea class="form-control" rows="5" required>
+- SSO: Started on #61
+- SSO: Minor bug fixes on #60
+- KLICK: Assisted in testing mobile apps
+- SSO: Researched on schema.org
+- SSO: Researched on Google Rich Snippets
+                        </textarea>
+                      </div>
                     </li>
                     <li class="list-group-item">
                       <h5 class="wl-text-medical-leave"><i class="fas fa-fw fa-stethoscope"></i> May 30</h5>
