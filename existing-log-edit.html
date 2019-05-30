@@ -129,26 +129,27 @@
               <div class="card border-left-primary shadow mb-4 worklog-card">
                 <form class="card-body" method="POST" action="">
 
-                  <!-- Work Log Tags -->
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="text-xs font-weight-bold text-seconary text-uppercase">
-                      <i class="fas fa-fw fa-pen"></i> EDITING
-                    </div>
-                  </div>
-
                   <!-- Day-Task Header -->
-                  <div class="row no-gutters align-items-center mb-3">
-                    <div class="col mr-2">
-                      <input type="text" name="title" class="form-control"
-                        placeholder="Week 11" required>
-                    </div>
-                    <div class="col-auto">
-                      <button type="button" class="btn btn-sm btn-outline-secondary shadow-sm">
-                        <i class="fas fa-trash-alt fa-sm"></i> Cancel
-                      </button>
-                      <button type="button" class="btn btn-sm btn-primary shadow-sm">
-                        <i class="fas fa-check fa-sm"></i> Submit
-                      </button>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col">
+
+                      <!-- Work Log Tags -->
+                      <div class="d-flex align-items-center mb-1">
+                        <div class="text-xs font-weight-bold text-seconary text-uppercase">
+                          <i class="fas fa-fw fa-pen"></i> EDITING
+                        </div>
+                      </div>
+    
+                      <!-- Work Log Title -->
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="title">
+                            Title <span class="text-danger">*</span>
+                          </label>
+                          <input type="text" name="title" class="form-control"
+                            placeholder="Week 11" required>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -184,12 +185,12 @@
                         <thead>
                           <tr>
                             <th>
-                              <label for="project-code-0">
+                              <label for="day-0-dli-0-projcode">
                                 Project Code <span class="text-danger">*</span>
                               </label>
                             </th>
                             <th>
-                              <label for="task-item-0">
+                              <label for="day-0-dli-title">
                                 Task Item <span class="text-danger">*</span>
                               </label>
                             </th>
@@ -372,6 +373,15 @@
                     </li>
                   </ul>
 
+                  <!-- Form Actions -->
+                  <div class="mt-3 text-right">
+                    <button type="button" class="btn btn-sm btn-primary shadow-sm">
+                      <i class="fas fa-check fa-sm"></i> Submit
+                    </button>
+                    <button type="reset" class="btn btn-sm btn-link text-secondary">
+                      <i class="fas fa-trash-alt fa-sm"></i> Cancel
+                    </button>
+                  </div>
                 </form>
               </div>
 
