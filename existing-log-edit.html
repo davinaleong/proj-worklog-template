@@ -126,8 +126,8 @@
             <!-- Work Log Card -->
             <div class="col-12">
 
-              <div class="card border-left-primary shadow mb-4 worklog-card">
-                <div class="card-body">
+              <f class="card border-left-primary shadow mb-4 worklog-card">
+                <form class="card-body" method="POST" action="">
 
                   <!-- Day-Task Header -->
                   <div class="row no-gutters align-items-center">
@@ -138,9 +138,13 @@
                         </div>
                       </div>
     
-                      <h4 class="m-0 font-weight-bold pb-3">
+                      <!-- <h4 class="m-0 font-weight-bold pb-3">
                         Week 11
-                      </h4>
+                      </h4> -->
+                      <div class="form-group">
+                        <input type="text" name="title" class="form-control" placeholder="Week 11"
+                          required>
+                      </div>
                     </div>
                     <div class="col-auto">
                       <button type="button" class="d-none d-sm-inline-block
@@ -207,7 +211,7 @@
                     </li>
                   </ul>
 
-                </div>
+                </form>
               </div>
 
             </div>
