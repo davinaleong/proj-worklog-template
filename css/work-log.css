@@ -37,27 +37,51 @@
 }
 
 .wl-text-public-holiday {
-  color: #00bcd4;
+  color: #009688;
 }
 
 .wl-bg-public-holiday {
-  background-color: #00bcd4;
+  background-color: #009688;
 }
 
 .wl-border-public-holiday {
-  border-color: #00bcd4;
+  border-color: #009688;
 }
 
 .wl-text-medical-leave {
   color: #e91e63;
 }
 
-.wl-background-color {
+.wl-bg-medical-leave {
   background-color: #e91e63;
 }
 
-.wl-border-color {
+.wl-border-medical-leave {
   border-color: #e91e63;
+}
+
+.wl-text-compassionate-leave {
+  color: #8e24aa;
+}
+
+.wl-bg-compassionate-leave {
+  background-color: #8e24aa;
+}
+
+.wl-border-compassionate-leave {
+  border-color: #8e24aa;
+}
+
+.wl-text-company-events {
+  color: #3f51b5;
+}
+
+.wl-bg-company-events {
+  background-color: #3f51b5;
+}
+
+.wl-border-company-events {
+  border-color: #3f51b5;
 }
 
 .wl-project-code {
