@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Work Log Template</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link href="css/work-log.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Work Log <sup>UI</sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="search.html">
+          <i class="fas fa-fw fa-search"></i>
+          <span>Search</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Nav Item - Work Log Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWorkLog" aria-expanded="true" aria-controls="collapseWorkLog">
+          <i class="fas fa-fw fa-calendar-alt"></i>
+          <span>Work Log</span>
+        </a>
+        <div id="collapseWorkLog" class="collapse" aria-labelledby="headingWorkLog" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Log Actions</h6>
+            <a class="collapse-item" href="index.html"><i class="fas fa-fw fa-table"></i> View All</a>
+            <a class="collapse-item" href="new-log.html"><i class="fas fa-fw fa-plus"></i> Add One</a>
+            
+            <h6 class="collapse-header">Settings</h6>
+            <a class="collapse-item" href="settings.html">
+              <i class="fas fa-fw fa-tags"></i> Edit Tags
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Settings Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSettings" aria-expanded="true" aria-controls="collapseSettings">
+          <i class="fas fa-fw fa-user"></i>
+          <span>Profile</span>
+        </a>
+        <div id="collapseSettings" class="collapse" aria-labelledby="headingSettings" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Profile Actions</h6>
+            <a class="collapse-item" href="profile.html">
+              <i class="fas fa-fw fa-eye"></i> View / Edit
+            </a>
+            <a class="collapse-item" href="activity-log.html">
+              <i class="fas fa-fw fa-chart-area"></i> Activity Log
+            </a>
+            <a class="collapse-item" href="login.html">
+              <i class="fas fa-fw fa-sign-out-alt"></i> Logout
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column pt-3">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Today: 28 May 2019</h1>
+          </div>
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Work Log Card -->
+            <div class="col-12">
+
+              <div class="card border-left-primary shadow mb-4 worklog-card">
+                <form class="card-body" method="POST" action="">
+
+                  <!-- Day-Task Header -->
+                  <div class="row no-gutters align-items-center">
+                    <div class="col">
+
+                      <!-- Work Log Tags -->
+                      <div class="d-flex align-items-center mb-1">
+                        <div class="text-xs font-weight-bold text-success text-uppercase">
+                          <i class="fas fa-fw fa-plus"></i> NEW
+                        </div>
+                      </div>
+
+                      <div class="alert alert-primary">
+                        Note: You are creating a <strong>New</strong> work-log entry.
+                      </div>
+    
+                      <!-- Work Log Title -->
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="title">
+                            Title <span class="text-danger">*</span>
+                          </label>
+                          <input type="text" name="title" class="form-control"
+                            placeholder="Week 11" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Entry List Group -->
+                  <ul class="list-group">
+                    <!-- Entry #0 (count: 1) -->
+                    <li class="list-group-item">
+
+                      <div class="form-row">
+                        <div class="col-8">
+                          <div class="form-group">
+                            <label for="entry0-title">Day Title <span class="text-danger">*</span></label>
+                            <input type="text" name="entry0-title" class="form-control" placeholder="May 31" required>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="entry0-type">Day-Type <span class="text-danger">*</span></label>
+                            <select name="entry0-type" class="form-control" required>
+                              <option value="">- Select Day-type -</option>
+                              <option value="W">Work Day</option>
+                              <option value="M" selected>Medical Leave</option>
+                              <option value="A">Annual Leave</option>
+                              <option value="P">Public Holiday</option>
+                              <option value="O">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entry Line Items (Tasks) Table -->
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <label>
+                                Project Code <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <label>
+                                Task Item <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item #0 (count: 1) -->
+                          <tr>
+                            <td>
+                              <select name="entry0-item0-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO" selected>SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry0-item0-title" class="form-control"
+                                value="Started on #61" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry0-item0-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #1 (count: 2) -->
+                          <tr>
+                            <td>
+                              <select name="entry0-item1-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO" selected>SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry0-item1-title" class="form-control"
+                                value="Minor bug fixes on #60" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry0-item1-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #2 (count: 3) -->
+                          <tr>
+                            <td>
+                              <select name="entry0-item2-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK" selected>Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry0-item2-title" class="form-control"
+                                value="Assisted in testing mobile apps" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry0-item2-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #3 (count: 4) -->
+                          <tr>
+                            <td>
+                              <select name="entry0-item3-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO" selected>SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry0-item3-title" class="form-control"
+                                value="Researched on `schema.org`" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry0-item3-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #4 (count: 5) -->
+                          <tr>
+                            <td>
+                              <select name="entry0-item4-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO" selected>SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry0-item4-title" class="form-control"
+                                value="Researched on Google Rich Snippets" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry0-item4-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </li>
+                    <!-- Entry #1 (count: 2) -->
+                    <li class="list-group-item">
+                      <div class="form-row">
+                        <div class="col-8">
+                          <div class="form-group">
+                            <label for="entry1-title">Day Title <span class="text-danger">*</span></label>
+                            <input type="text" name="entry1-title" class="form-control" placeholder="May 30" required>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="entry1-type">Day-Type <span class="text-danger">*</span></label>
+                            <select name="entry1-type" class="form-control" required>
+                              <option value="">- Select Day-type -</option>
+                              <option value="W">Work Day</option>
+                              <option value="M" selected>Medical Leave</option>
+                              <option value="A">Annual Leave</option>
+                              <option value="P">Public Holiday</option>
+                              <option value="O">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entry Items (Tasks) Table -->
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <label>
+                                Project Code <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <label>
+                                Task Item <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item #0 (count: 1) -->
+                          <tr>
+                            <td>
+                              <select name="entry1-item0-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others" selected>Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry1-item0-title" class="form-control"
+                                value="Style examples" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry1-item0-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #1 (count: 2) -->
+                          <tr>
+                            <td>
+                              <select name="entry1-item1-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry1-item1-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry1-item1-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #2 (count: 3) -->
+                          <tr>
+                            <td>
+                              <select name="entry1-item2-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry1-item2-title" class="form-control"
+                                value="#issue-no" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry1-item2-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #3 (count: 4) -->
+                          <tr>
+                            <td>
+                              <select name="entry1-item3-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO" selected>Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry1-item3-title" class="form-control"
+                                value="Added `User` Module" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry1-item3-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #4 (count: 5) -->
+                          <tr>
+                            <td>
+                              <select name="entry1-item4-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ">Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others" selected>Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry1-item4-title" class="form-control"
+                                value="Miscellaneous items with no direct relations to projects" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry1-item4-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </li>
+                    <!-- Entry #2 (count: 3) -->
+                    <li class="list-group-item">
+                      <div class="form-row">
+                        <div class="col-8">
+                          <div class="form-group">
+                            <label for="entry2-title">Day Title <span class="text-danger">*</span></label>
+                            <input type="text" name="entry2-title" class="form-control" placeholder="May 28" required>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="entry2-type">Day-Type <span class="text-danger">*</span></label>
+                            <select name="entry2-type" class="form-control" required>
+                              <option value="">- Select Day-type -</option>
+                              <option value="W">Work Day</option>
+                              <option value="M" selected>Medical Leave</option>
+                              <option value="A">Annual Leave</option>
+                              <option value="P">Public Holiday</option>
+                              <option value="O">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entry Items (Tasks) Table -->
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <label>
+                                Project Code <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <label>
+                                Task Item <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item #0 (count: 1) -->
+                          <tr>
+                            <td>
+                              <select name="entry2-item0-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry2-item0-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry2-item0-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #1 (count: 2) -->
+                          <tr>
+                            <td>
+                              <select name="entry2-item1-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry2-item1-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry2-item1-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #2 (count: 3) -->
+                          <tr>
+                            <td>
+                              <select name="entry2-item2-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry2-item2-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry2-item2-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </li>
+                    <!-- Entry #3 (count: 4) -->
+                    <li class="list-group-item">
+                      <div class="form-row">
+                        <div class="col-8">
+                          <div class="form-group">
+                            <label for="entry3-title">Day Title <span class="text-danger">*</span></label>
+                            <input type="text" name="entry3-title" class="form-control" placeholder="May 28" required>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="entry3-type">Day-Type <span class="text-danger">*</span></label>
+                            <select name="entry3-type" class="form-control" required>
+                              <option value="">- Select Day-type -</option>
+                              <option value="W">Work Day</option>
+                              <option value="M" selected>Medical Leave</option>
+                              <option value="A">Annual Leave</option>
+                              <option value="P">Public Holiday</option>
+                              <option value="O">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entry Items (Tasks) Table -->
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <label>
+                                Project Code <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <label>
+                                Task Item <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item #0 (count: 1) -->
+                          <tr>
+                            <td>
+                              <select name="entry3-item0-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry3-item0-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry3-item0-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #1 (count: 2) -->
+                          <tr>
+                            <td>
+                              <select name="entry3-item1-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry3-item1-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry3-item1-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #2 (count: 3) -->
+                          <tr>
+                            <td>
+                              <select name="entry3-item2-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry3-item2-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry3-item2-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </li>
+                    <!-- Entry #4 (count: 5) -->
+                    <li class="list-group-item">
+                      <div class="form-row">
+                        <div class="col-8">
+                          <div class="form-group">
+                            <label for="entry4-title">Day Title <span class="text-danger">*</span></label>
+                            <input type="text" name="entry4-title" class="form-control" placeholder="May 28" required>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="entry4-type">Day-Type <span class="text-danger">*</span></label>
+                            <select name="entry4-type" class="form-control" required>
+                              <option value="">- Select Day-type -</option>
+                              <option value="W">Work Day</option>
+                              <option value="M" selected>Medical Leave</option>
+                              <option value="A">Annual Leave</option>
+                              <option value="P">Public Holiday</option>
+                              <option value="O">Others</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Entry Items (Tasks) Table -->
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <label>
+                                Project Code <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <label>
+                                Task Item <span class="text-danger">*</span>
+                              </label>
+                            </th>
+                            <th>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Item #0 (count: 1) -->
+                          <tr>
+                            <td>
+                              <select name="entry4-item0-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry4-item0-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry4-item0-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #1 (count: 2) -->
+                          <tr>
+                            <td>
+                              <select name="entry4-item1-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry4-item1-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry4-item1-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <!-- Item #2 (count: 3) -->
+                          <tr>
+                            <td>
+                              <select name="entry4-item2-project_code" class="form-control" required>
+                                <option value="">- Select Project Code</option>
+                                <option value="KLICK">Klick</option>
+                                <option value="SSO">SSO</option>
+                                <option value="PROJ" selected>Personal Project</option>
+                                <option value="PROTO">Prototype / Proof-of-Concept</option>
+                                <option value="LEARN">Learning</option>
+                                <option value="Others">Others</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input type="text" name="entry4-item2-title" class="form-control"
+                                value="Task item" required>
+                            </td>
+                            <td>
+                              <button type="button" name="entry4-item2-cancel"
+                                class="btn btn-sm btn-outline-danger">
+                                <i class="fas fa-fw fa-times"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                            <td>
+                              <button type="button" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-fw fa-plus"></i></button>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </li>
+                  </ul>
+
+                  <!-- Form Actions -->
+                  <div class="mt-3 text-right">
+                    <button type="button" class="btn btn-sm btn-primary shadow-sm">
+                      <i class="fas fa-check fa-sm"></i> Submit
+                    </button>
+                    <button type="reset" class="btn btn-sm btn-link text-secondary">
+                      <i class="fas fa-trash-alt fa-sm"></i> Cancel
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Word Log 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="js/work-log.js"></script>
+
+</body>
+
+</html>
