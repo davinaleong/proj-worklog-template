@@ -49,18 +49,18 @@ Sample format of current Work Log
 | Handle | Sub-Handles | Data Piece |
 |:------:|:-----------:|:----------:|
 | `title` | | Week XX |
-| `day-0` | `day-0-title`, `day-0-type` | Day 1 ( Day Type) |
-| `day-0-dli-0` | `day-0-dli-0-title`, `day-0-dli-0-projcode` | - Task Item 1, `PROJ-CODE` |
-| `day-0-dli-1` | `day-0-dli-1-title`, `day-0-dli-1-projcode` | - Task Item 2, `PROJ-CODE` |
-| `day-0-dli-2` | `day-0-dli-2-title`, `day-0-dli-2-projcode` | - Task Item 3, `PROJ-CODE` |
-| `day-0-dli-3` | `day-0-dli-3-title`, `day-0-dli-3-projcode` | - Task Item 4, `PROJ-CODE` |
-| `day-0-dli-4` | `day-0-dli-4-title`, `day-0-dli-4-projcode` | - Task Item 5, `PROJ-CODE` |
+| `entry-0` | `entry-0-title`, `entry-0-type` | Day 1 ( Day Type) |
+| `entry-0-item-0` | `entry-0-item-0-title`, `entry-0-item-0-project_code` | - Task Item 1, `PROJ-CODE` |
+| `entry-0-item-1` | `entry-0-item-1-title`, `entry-0-item-1-project_code` | - Task Item 2, `PROJ-CODE` |
+| `entry-0-item-2` | `entry-0-item-2-title`, `entry-0-item-2-project_code` | - Task Item 3, `PROJ-CODE` |
+| `entry-0-item-3` | `entry-0-item-3-title`, `entry-0-item-3-project_code` | - Task Item 4, `PROJ-CODE` |
+| `entry-0-item-4` | `entry-0-item-4-title`, `entry-0-item-4-project_code` | - Task Item 5, `PROJ-CODE` |
 | | | |
 | `title` | | Week XX |
-| `day-1` | `day-1-title`, `day-1-type` | Day 2 ( Day Type) |
-| `day-1-dli-0` | `day-1-dli-0-title`, `day-1-dli-0-projcode` | - Task Item 1, `PROJ-CODE` |
-| `day-1-dli-1` | `day-1-dli-1-title`, `day-1-dli-1-projcode` | - Task Item 2, `PROJ-CODE` |
-| `day-1-dli-2` | `day-1-dli-2-title`, `day-1-dli-2-projcode` | - Task Item 3, `PROJ-CODE` |
-| `day-1-dli-3` | `day-1-dli-3-title`, `day-1-dli-3-projcode` | - Task Item 4, `PROJ-CODE` |
-| `day-1-dli-4` | `day-1-dli-4-title`, `day-1-dli-4-projcode` | - Task Item 5, `PROJ-CODE` |
+| `entry-1` | `entry-1-title`, `entry-1-type` | Day 2 ( Day Type) |
+| `entry-1-item-0` | `entry-1-item-0-title`, `entry-1-item-0-project_code` | - Task Item 1, `PROJ-CODE` |
+| `entry-1-item-1` | `entry-1-item-1-title`, `entry-1-item-1-project_code` | - Task Item 2, `PROJ-CODE` |
+| `entry-1-item-2` | `entry-1-item-2-title`, `entry-1-item-2-project_code` | - Task Item 3, `PROJ-CODE` |
+| `entry-1-item-3` | `entry-1-item-3-title`, `entry-1-item-3-project_code` | - Task Item 4, `PROJ-CODE` |
+| `entry-1-item-4` | `entry-1-item-4-title`, `entry-1-item-4-project_code` | - Task Item 5, `PROJ-CODE` |
 | ... | ... | ... |
