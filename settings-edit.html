@@ -162,11 +162,6 @@
                   <th>
                     <label>Removed</label>
                   </th>
-                  <td>
-                    <button type="button" class="btn btn-sm btn-outline-primary">
-                      <i class="fas fa-fw fa-plus"></i>
-                    </button>
-                  </td>
                 </tr>
                 </thead>
                 <tbody>
@@ -201,7 +196,6 @@
                         name="company1-remove" value="remove">
                     </div>
                   </td>
-                  <td>&nbsp;</td>
                 </tr>
                 <tr>
                   <td>2</td>
@@ -234,10 +228,9 @@
                         name="company2-remove" value="remove">
                     </div>
                   </td>
-                  <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td><sup>NEW</sup></td>
+                  <td><sup class="text-uppercase text-success">NEW</sup></td>
                   <td>
                     <div class="form-row">
                       <div class="col">
@@ -261,20 +254,19 @@
                         class="form-control" required>
                     </div>
                   </td>
-                  <td>&nbsp;</td>
                   <td>
                     <button type="button" name="company3-remove-new"
-                      class="btn btn-sm btn-outline-danger">
-                      <i class="fas fa-fw fa-trash"></i>
+                      class="btn btn-sm btn-link text-danger">
+                      <i class="fas fa-fw fa-trash-alt"></i>
                     </button>
                   </td>
                 </tr>
                 </tbody>
                 <tfoot>
                 <tr>
-                  <td colspan="4">&nbsp;</td>
+                  <td colspan="3">&nbsp;</td>
                   <td>
-                    <button type="button" class="btn btn-sm btn-outline-primary">
+                    <button type="button" class="btn btn-sm btn-link text-primary">
                       <i class="fas fa-fw fa-plus"></i>
                     </button>
                   </td>
@@ -287,29 +279,86 @@
             <div class="col-12 col-lg-6">
               <h3 class="mb-3 text-gray-800">Projects</h3>
 
+              <!-- Projects Form Table -->
               <table class="table">
                 <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Project</th>
-                  <th>Code</th>
-                  <th>Removed</th>
+                  <th>
+                    <label>ID</label>
+                  </th>
+                  <th>
+                    <label>Project <span class="text-danger">*</span></label>
+                  </th>
+                  <th>
+                    <label>Code <span class="text-danger">*</span></label>
+                  </th>
+                  <th>
+                    <label>Removed</label>
+                  </th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Personal Project</td>
-                  <td>PROJ</td>
-                  <td>&nbsp;</td>
+                  <td>
+                    <input type="text" name="project1-name" class="form-control form-control-sm"
+                      value="Personal Project" required>
+                  </td>
+                  <td>
+                    <input type="text" name="project1-code" class="form-control form-control-sm"
+                      value="PROJ" required>
+                  </td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input position-static" type="checkbox"
+                        name="project1-remove" value="remove">
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Prototype / Proof-of-Concept</td>
-                  <td>POC</td>
-                  <td>&nbsp;</td>
+                  <td>
+                    <input type="text" name="project2-name" class="form-control form-control-sm"
+                      value="Prototype / Proof-of-Concept" required>
+                  </td>
+                  <td>
+                    <input type="text" name="project2-code" class="form-control form-control-sm"
+                      value="POC" required>
+                  </td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input position-static" type="checkbox"
+                        name="project2-remove" value="remove">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><sup class="text-uppercase text-success">NEW</sup></td>
+                  <td>
+                    <input type="text" name="project3-name" class="form-control form-control-sm" required>
+                  </td>
+                  <td>
+                    <input type="text" name="project3-code" class="form-control form-control-sm" required>
+                  </td>
+                  <td>
+                    <button type="button" name="company3-remove-new"
+                      class="btn btn-sm btn-link text-danger">
+                      <i class="fas fa-fw fa-trash-alt"></i>
+                    </button>
+                  </td>
                 </tr>
                 </tbody>
+                <tfoot>
+                <tr>
+                  <td colspan="3">&nbsp;</td>
+                  <td>
+                    <button type="button" name="company-add"
+                      class="btn btn-sm btn-link text-primary">
+                      <i class="fas fa-fw fa-plus"></i>
+                    </button>
+                  </td>
+                </tr>
+                </tfoot>
               </table>
             </div>
 
