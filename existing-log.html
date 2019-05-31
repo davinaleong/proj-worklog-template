@@ -126,25 +126,42 @@
             <!-- Work Log Card -->
             <div class="col-12">
 
-              <div class="card border-left-success shadow mb-4 clickable worklog-card-edit">
+              <div class="card border-left-success shadow mb-4">
                 <div class="card-body">
-                  <div class="d-flex align-items-center mb-1">
-                    <div class="text-xs font-weight-bold text-success text-uppercase mr-1">
-                      <i class="fas fa-fw fa-plus"></i> NEW
+
+                  <!-- Day-Task Header -->
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+
+                      <!-- Work Log Tags -->
+                      <div class="d-flex align-items-center mb-1">
+                          <div class="text-xs font-weight-bold text-success text-uppercase mr-1">
+                          <i class="fas fa-fw fa-plus"></i> NEW
+                        </div>
+                        <div class="text-xs font-weight-bold text-info text-uppercase mx-1">
+                          <i class="fas fa-fw fa-building"></i> Company B
+                        </div>
+                        <div class="text-xs font-weight-bold text-secondary text-uppercase mx-1">
+                          <i class="fas fa-fw fa-calendar"></i> 2019
+                        </div>
+                      </div>
+    
+                      <!-- Work Log Title -->
+                      <h4 class="m-0 font-weight-bold pb-3">
+                        Week 11
+                      </h4>
                     </div>
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mx-1">
-                      <i class="fas fa-fw fa-building"></i> Company B
-                    </div>
-                    <div class="text-xs font-weight-bold text-secondary text-uppercase mx-1">
-                      <i class="fas fa-fw fa-calendar"></i> 2019
+
+                    <!-- Header Actions -->
+                    <div class="col-auto">
+                      <a href="existing-log-edit.html" class="d-none d-sm-inline-block
+                        btn btn-sm btn-outline-primary shadow-sm">
+                        <i class="fas fa-pen fa-sm"></i> Edit
+                      </a>
                     </div>
                   </div>
 
-                  <h4 class="m-0 font-weight-bold pb-3">
-                    <a href="existing-log-edit.html">Week 11</a>
-                  </h4>
-
-                  <!-- Day-Task list-group -->
+                  <!-- Day List items (Tasks)-->
                   <ul class="list-group">
                     <li class="list-group-item">
                       <h5 class="wl-text-medical-leave"><i class="fas fa-fw fa-stethoscope"></i> May 31</h5>
