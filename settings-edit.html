@@ -133,49 +133,152 @@
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">Today: 28 May 2019</h1>
 
-          <!-- Page Sub-Heading -->
-          <div class="row no-gutters align-items-center">
-            <div class="col mr-2">
-              <h2 class="h4 mb-3 text-gray-800">Settings</h2>
-            </div>
-
-            <!-- Header Actions -->
-            <div class="col-auto">
-              <a href="settings-edit.html" class="d-none d-sm-inline-block
-                btn btn-sm btn-outline-primary shadow-sm">
-                <i class="fas fa-pen fa-sm"></i> Edit
-              </a>
-            </div>
+          <!-- Note Alert -->
+          <div class="alert alert-primary">
+            Note: You are now <strong>editing</strong> this page.
           </div>
 
-          <div class="row">
+          <!-- Page Sub-Heading -->
+          <h2 class="h4 mb-3 text-gray-800">Settings</h2>
+
+          <form class="row" method="POST" action="">
             <!-- Companies Table -->
             <div class="col-12">
               <h3 class="mb-3 text-gray-800">Companies</h3>
 
+              <!-- Add/Remove/Edit Companies Table Form -->
               <table class="table">
                 <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Company</th>
-                  <th>Period</th>
-                  <th>Removed</th>
+                  <th>
+                    <label>ID</label>
+                  </th>
+                  <th>
+                    <label>Company <span class="text-danger">*</span></label>
+                  </th>
+                  <th>
+                    <label>Period <span class="text-danger">*</span></label>
+                  </th>
+                  <th>
+                    <label>Removed</label>
+                  </th>
+                  <td>
+                    <button type="button" class="btn btn-sm btn-outline-primary">
+                      <i class="fas fa-fw fa-plus"></i>
+                    </button>
+                  </td>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                   <td>1</td>
-                  <td>The Pixel Age (TPA)</td>
-                  <td>May 2018 - May 2019</td>
-                  <td>&nbsp;</td>
+                  <td>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" name="company1-title" value="The Pixel Age"
+                          class="form-control form-control-sm" required>
+                      </div>
+                      <div class="col-3">
+                        <input type="text" name="company1-project_code" value="TPA"
+                          class="form-control form-control-sm" required>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group input-group-sm">
+                      <input type="date" name="company1-period_started_on" value="01-05-2018"
+                        class="form-control" required>
+                      <div class="input-group-prepend input-group-append">
+                          <div class="input-group-text">-</div>
+                      </div>
+                      <input type="date" name="company1-period_ended_on" value="01-05-2019"
+                        class="form-control" required>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input position-static" type="checkbox"
+                        name="company1-remove" value="remove">
+                    </div>
+                  </td>
+                  <td>-</td>
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>The Shipyard Private Limited (TSY)</td>
-                  <td>Nov 2015 - May 2018</td>
+                  <td>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" name="company2-title" value="The Shipyard Private Limited"
+                          class="form-control form-control-sm" required>
+                      </div>
+                      <div class="col-3">
+                        <input type="text" name="company2-project_code" value="TSY"
+                          class="form-control form-control-sm" required>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group input-group-sm">
+                      <input type="date" name="company2-period_started_on" value="01-11-2015"
+                        class="form-control" required>
+                      <div class="input-group-prepend input-group-append">
+                          <div class="input-group-text">-</div>
+                      </div>
+                      <input type="date" name="company2-period_ended_on" value="01-05-2018"
+                        class="form-control" required>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input position-static" type="checkbox"
+                        name="company2-remove" value="remove">
+                    </div>
+                  </td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>#</td>
+                  <td>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" name="company2-title"
+                          class="form-control form-control-sm" required>
+                      </div>
+                      <div class="col-3">
+                        <input type="text" name="company2-project_code"
+                          class="form-control form-control-sm" required>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group input-group-sm">
+                      <input type="date" name="company2-period_started_on"
+                        class="form-control" required>
+                      <div class="input-group-prepend input-group-append">
+                          <div class="input-group-text">-</div>
+                      </div>
+                      <input type="date" name="company2-period_ended_on"
+                        class="form-control" required>
+                    </div>
+                  </td>
                   <td>&nbsp;</td>
+                  <td>
+                    <button type="button" class="btn btn-sm btn-outline-danger">
+                      <i class="fas fa-fw fa-trash"></i>
+                    </button>
+                  </td>
                 </tr>
                 </tbody>
+                <tfoot>
+                <tr>
+                  <td colspan="4">&nbsp;</td>
+                  <td>
+                    <button type="button" class="btn btn-sm btn-outline-primary">
+                      <i class="fas fa-fw fa-plus"></i>
+                    </button>
+                  </td>
+                </tr>
+                </tfoot>
               </table>
             </div>
 
@@ -299,14 +402,14 @@
                   <td></td>
                 </tr>
                 <tr>
-                  <td>6</td>
+                  <td>7</td>
                   <td>Compassionate Leave</td>
                   <td><i class="fas fa-lg fa-hand-holding-heart"></td>
                   <td><span style="color: #8e24aa">#8e24aa</span></td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>6</td>
+                  <td>8</td>
                   <td>Company Events</td>
                   <td><i class="fas fa-lg fa-building"></td>
                   <td><span style="color: #3f51b5">#3f51b5</span></td>
@@ -315,7 +418,17 @@
                 </tbody>
               </table>
             </div>
-          </div>
+
+            <!-- Form Actions -->
+            <div class="col-12 text-right my-3">
+              <button type="button" class="btn btn-sm btn-primary shadow-sm">
+                <i class="fas fa-check fa-sm"></i> Submit
+              </button>
+              <button type="reset" class="btn btn-sm btn-link text-secondary">
+                <i class="fas fa-trash-alt fa-sm"></i> Cancel
+              </button>
+            </div>
+          </form>
 
         </div>
         <!-- /.container-fluid -->
