@@ -1,5 +1,7 @@
 # Work Log Template
 
+View demo of template [here](https://davinaleong.github.io/proj-worklog-template/).
+
 This repo is phase 2 of my personal Work Log project.
 
 This repo contains the code for the Work Log template which will serve as the frontend for the upcoming API part of the project.
