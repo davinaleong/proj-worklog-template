@@ -1,0 +1,32 @@
+<snippets>
+
+<span class="text-danger">*</span>
+
+
+<td>
+                        <button type="button" class="btn btn-sm btn-link text-primary">
+                          <i class="fas fa-fw fa-plus"></i>
+                        </button>
+                      </td>
+
+
+<td>
+                        <button type="button" class="btn btn-sm btn-link text-primary">
+                          <i class="fas fa-fw fa-plus"></i>
+                        </button>
+                      </td>
+
+ 
+ <!-- Work Log Card -->
+              <div class="card shadow mb-4">
+                <div class="card-body">
+                  
+                  //
+
+                </div>
+              </div>
+
+
+<td><sup class="text-uppercase text-success">NEW</sup></td>
+
+</snippets>
